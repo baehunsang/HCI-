@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>HCI Assignment</title>
+	</head>
+<body>
+	<h1>HCI 자료구조 구현</h1>
+	<h3>2019320040 배훈상</h3>
+	<p>GUI Object has 3 type: 'window', 'button', 'menu'.<br>
+	If you want to create root node, write.<br><br>
+	'create,id,window,stating x position,starting y position,width,height,title'<br>
+	'create,id,button,stating x position,starting y position,width,height,button text'<br>
+	'create,id,menu,stating x position,starting y position,width,height,the number of items,menu name'<br><br>
+	If you want to insert the node, write.<br><br>
+	'insert,id,window,parents of node,stating x position,starting y position,width,height,title'<br>
+	'insert,id,button,parents of node,stating x position,starting y position,width,height,button text'<br>
+	'insert,id,menu,parents of node,stating x position,starting y position,width,height,the number of items,menu name'<br><br>
+	If button's text is 'play' or 'pause', you can play or pause the music in the assignment file.</p>
+		<button onclick="CreateRoot(Tree)">CreateRoot</button>
+		<button onclick="InsertNode(Tree)">InsertNode</button>
+		<button onclick="DeletNode(Tree)">DeletNode</button>
+		<button onclick="PrintTree(Tree)">PrintTree</button>
+		<button onclick="UserSearch(Tree)">SearchNode</button>
+		<input type="text" id="inputText">
+		<button onclick="getInput()">createNode</button>
+	
+		<canvas id="MyCanvas" width="10000px" height="10000px" style="border: 1px solid #993300" onclick="EventHandle(Tree, event)">The browser dose not support canvas</canvas>
+		<script src="project.js">
+		</script>
+	
+		
+</body>
+</html>
